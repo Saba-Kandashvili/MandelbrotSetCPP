@@ -2,7 +2,6 @@
 #include <numeric>
 #include <complex>
 #include <cmath>
-#include <iostream>
 
 
 
@@ -28,8 +27,8 @@ int main(int argc, char* argv[])
 	SDL_CreateWindowAndRenderer(2000, 2000, 0, &window, &renderer);
 	SDL_RenderSetScale(renderer, 2, 2);
 
-	for (double x = 0.0; x < 1.0; x += 0.0005)
-		for (double y = 0.0; y < 1.0; y += 0.0005)
+	for (double x = 0.0; x < 1.0; x += 0.001) // change the adding step to control the precision
+		for (double y = 0.0; y < 1.0; y += 0.001) // WARNING: as you decrease the number, the time to render grows exponentially
 		{
 			double pointX = std::lerp(-2.0, 2.0, x);
 			double pointY = std::lerp(-2.0, 2.0, y);
@@ -42,14 +41,16 @@ int main(int argc, char* argv[])
 			else
 			{
 				SDL_SetRenderDrawColor(renderer, 3 * iters % 255, 3 * iters % 255, 3 * iters % 255, 255);
+
+				// pretty cloros:
 				//SDL_SetRenderDrawColor(renderer, (int)(x * 1000) * iters % 255, (int)(y * 1000) * iters % 255, (int)(x * 1000) * iters % 255, 255);
+
 				SDL_RenderDrawPointF(renderer, x * 1000, y * 1000);
 			}
-			std::cout << x << std::endl;
 		}
 
 	SDL_RenderPresent(renderer);
-
+	// press Q to exit
 	bool quit = false;
 	SDL_Event event;
 	while (!quit)

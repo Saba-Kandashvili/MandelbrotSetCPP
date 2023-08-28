@@ -1,6 +1,6 @@
 ﻿  Source.cpp
-E:\C++ Coding\MandelbrotSet\Source.cpp(40,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-E:\C++ Coding\MandelbrotSet\Source.cpp(40,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-E:\C++ Coding\MandelbrotSet\Source.cpp(46,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-E:\C++ Coding\MandelbrotSet\Source.cpp(46,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\C++ Coding\MandelbrotSet\Source.cpp(39,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\C++ Coding\MandelbrotSet\Source.cpp(39,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\C++ Coding\MandelbrotSet\Source.cpp(48,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\C++ Coding\MandelbrotSet\Source.cpp(48,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   MandelbrotSet.vcxproj -> E:\C++ Coding\MandelbrotSet\x64\Debug\MandelbrotSet.exe
